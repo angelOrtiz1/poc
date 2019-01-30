@@ -14,13 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     let navSearchController = UINavigationController()
-    
+    let utils = Utils()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        self.window!.rootViewController = navSearchController
+        window = UIWindow(frame: UIScreen.main.bounds)
         // Make the window visible
         self.window!.makeKeyAndVisible()
+        window?.rootViewController = UINavigationController(rootViewController: PaypalViewController())
         return true
     }
 

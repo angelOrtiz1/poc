@@ -7,4 +7,6 @@ target 'POCs FVP iOS' do
 
   # Pods for POCs FVP iOS
   pod 'Braintree'
+  pod 'BraintreeDropIn'
+
 end
