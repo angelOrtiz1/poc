@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70783238894A91B3825F15D7 /* Pods_POCs_FVP_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EA49B2DE78ADA11D590B68 /* Pods_POCs_FVP_iOS.framework */; };
 		CE132B2F22020F9C0059EA49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE132B2E22020F9C0059EA49 /* AppDelegate.swift */; };
 		CE132B3122020F9C0059EA49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE132B3022020F9C0059EA49 /* ViewController.swift */; };
-		CE132B3422020F9C0059EA49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE132B3222020F9C0059EA49 /* Main.storyboard */; };
 		CE132B3622020F9E0059EA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE132B3522020F9E0059EA49 /* Assets.xcassets */; };
 		CE132B3922020F9E0059EA49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE132B3722020F9E0059EA49 /* LaunchScreen.storyboard */; };
+		CE132B42220213760059EA49 /* paypalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE132B40220213760059EA49 /* paypalViewController.swift */; };
+		CE132B43220213760059EA49 /* paypalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE132B41220213760059EA49 /* paypalViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53EA49B2DE78ADA11D590B68 /* Pods_POCs_FVP_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_POCs_FVP_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE132B2B22020F9C0059EA49 /* POCs FVP iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "POCs FVP iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE132B2E22020F9C0059EA49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE132B3022020F9C0059EA49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE132B3322020F9C0059EA49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE132B3522020F9E0059EA49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE132B3822020F9E0059EA49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE132B3A22020F9E0059EA49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE132B40220213760059EA49 /* paypalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paypalViewController.swift; sourceTree = "<group>"; };
+		CE132B41220213760059EA49 /* paypalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = paypalViewController.xib; sourceTree = "<group>"; };
+		F7DA1B02343DEDEEE50FF64B /* Pods-POCs FVP iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POCs FVP iOS.debug.xcconfig"; path = "Target Support Files/Pods-POCs FVP iOS/Pods-POCs FVP iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		FA09060D7285FD85329DA8EC /* Pods-POCs FVP iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POCs FVP iOS.release.xcconfig"; path = "Target Support Files/Pods-POCs FVP iOS/Pods-POCs FVP iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70783238894A91B3825F15D7 /* Pods_POCs_FVP_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47CDF1C66E29D6C547847FD4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7DA1B02343DEDEEE50FF64B /* Pods-POCs FVP iOS.debug.xcconfig */,
+				FA09060D7285FD85329DA8EC /* Pods-POCs FVP iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C4FBFD56861B1960A377E456 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53EA49B2DE78ADA11D590B68 /* Pods_POCs_FVP_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE132B2222020F9C0059EA49 = {
 			isa = PBXGroup;
 			children = (
 				CE132B2D22020F9C0059EA49 /* POCs FVP iOS */,
 				CE132B2C22020F9C0059EA49 /* Products */,
+				47CDF1C66E29D6C547847FD4 /* Pods */,
+				C4FBFD56861B1960A377E456 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +83,11 @@
 			children = (
 				CE132B2E22020F9C0059EA49 /* AppDelegate.swift */,
 				CE132B3022020F9C0059EA49 /* ViewController.swift */,
-				CE132B3222020F9C0059EA49 /* Main.storyboard */,
 				CE132B3522020F9E0059EA49 /* Assets.xcassets */,
 				CE132B3722020F9E0059EA49 /* LaunchScreen.storyboard */,
 				CE132B3A22020F9E0059EA49 /* Info.plist */,
+				CE132B40220213760059EA49 /* paypalViewController.swift */,
+				CE132B41220213760059EA49 /* paypalViewController.xib */,
 			);
 			path = "POCs FVP iOS";
 			sourceTree = "<group>";
@@ -71,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE132B3D22020F9E0059EA49 /* Build configuration list for PBXNativeTarget "POCs FVP iOS" */;
 			buildPhases = (
+				11834C52EC8D13578DAD8A3D /* [CP] Check Pods Manifest.lock */,
 				CE132B2722020F9C0059EA49 /* Sources */,
 				CE132B2822020F9C0059EA49 /* Frameworks */,
 				CE132B2922020F9C0059EA49 /* Resources */,
+				E728DBBF264C04908F9B07CA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +153,59 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE132B3922020F9E0059EA49 /* LaunchScreen.storyboard in Resources */,
+				CE132B43220213760059EA49 /* paypalViewController.xib in Resources */,
 				CE132B3622020F9E0059EA49 /* Assets.xcassets in Resources */,
-				CE132B3422020F9C0059EA49 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11834C52EC8D13578DAD8A3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-POCs FVP iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E728DBBF264C04908F9B07CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-POCs FVP iOS/Pods-POCs FVP iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Braintree/Braintree.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Braintree.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-POCs FVP iOS/Pods-POCs FVP iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE132B2722020F9C0059EA49 /* Sources */ = {
@@ -136,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE132B3122020F9C0059EA49 /* ViewController.swift in Sources */,
+				CE132B42220213760059EA49 /* paypalViewController.swift in Sources */,
 				CE132B2F22020F9C0059EA49 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +221,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CE132B3222020F9C0059EA49 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE132B3322020F9C0059EA49 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE132B3722020F9E0059EA49 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,6 +350,7 @@
 		};
 		CE132B3E22020F9E0059EA49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7DA1B02343DEDEEE50FF64B /* Pods-POCs FVP iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +368,7 @@
 		};
 		CE132B3F22020F9E0059EA49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA09060D7285FD85329DA8EC /* Pods-POCs FVP iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -11,11 +11,16 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
 
+    var window: UIWindow?
+    let navSearchController = UINavigationController()
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        self.window!.rootViewController = navSearchController
+        // Make the window visible
+        self.window!.makeKeyAndVisible()
         return true
     }
 
