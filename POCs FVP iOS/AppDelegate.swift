@@ -7,22 +7,31 @@
 //
 
 import UIKit
+import Braintree
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
     var window: UIWindow?
-    let navSearchController = UINavigationController()
     let utils = Utils()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        BTAppSwitch.setReturnURLScheme("com.fvp.pocs.POCs-FVP-iOS.payments")
+
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         // Make the window visible
         self.window!.makeKeyAndVisible()
         window?.rootViewController = UINavigationController(rootViewController: PaypalViewController())
+        
         return true
+    }
+
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
+        if url.scheme?.localizedCaseInsensitiveCompare("com.fvp.pocs.POCs-FVP-iOS.payments") == .orderedSame {
+            return BTAppSwitch.handleOpen(url, options: options)
+        }
+        return false
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
